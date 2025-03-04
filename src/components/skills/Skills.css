@@ -1,0 +1,13 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 170px;
+}
+.skills h1{
+    font-size: 40px;
+}
+.skill {
+    width: 100%;
+}

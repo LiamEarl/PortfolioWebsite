@@ -1,0 +1,73 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px 0px;
+    gap: 50px;
+}
+.intro h1{
+    font-size: 50px;
+    transition: 0.3s;
+}
+.intro h1:hover{
+    transform: scale(1.02);
+}
+.intro h1 span{
+    font-size: 50px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(70deg, #ff4f03, #900202);
+}
+.intro p{
+    font-size: 25px;
+}
+.waving-hand {
+    position: absolute;
+    z-index: -1;
+}
+.portrait {
+    border-radius: 50px;
+    width: 475px;
+    box-shadow: 7px 7px #900202, 14px 14px #90020274, 21px 21px #9002022b;
+    transition: 0.3s;
+}
+.portrait:hover{
+    transform: scale(1.015);
+}
+.home-buttons{
+    display: flex;
+    gap: 30px;
+}
+.home-buttons button {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    font-size: 20px;
+}
+.home-button-skills {
+    border: none;
+    background-image: linear-gradient(70deg, #ff4f03, #900202);
+    border-radius: 15px;
+    transition: transform 0.3s;
+    color: white;
+    white-space: nowrap;
+}
+.home-button-resume {
+    border: 3px solid #000000;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    color: black;
+    white-space: nowrap;
+}
+.home-button-skills:hover{
+    transform: scale(1.05);
+    border: 2px solid #ffffff;
+    
+    cursor: pointer;
+}
+.home-button-resume:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    
+}
