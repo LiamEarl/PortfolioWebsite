@@ -4,6 +4,7 @@
     justify-content: center;
     margin: 120px 0px;
     gap: 50px;
+    margin-bottom: 250px;
 }
 .intro h1{
     font-size: 50px;
@@ -63,7 +64,6 @@
 .home-button-skills:hover{
     transform: scale(1.05);
     border: 2px solid #ffffff;
-    
     cursor: pointer;
 }
 .home-button-resume:hover{

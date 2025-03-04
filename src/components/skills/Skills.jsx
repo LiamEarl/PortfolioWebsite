@@ -38,27 +38,29 @@ const Skills = () => {
         <div className="skills">
             <h1>I'm skilled in:</h1>
             <div className="skills-container">
-                {my_skills_data.map((skill,index)=>{
+                {my_skills_data.map((skill) => {
                     return (
                         <div className="skill">
-                            <motion.img 
-                                src={skill.s_img} 
+                            <motion.img
+                                src={skill.s_img}
                                 alt={skill.name}
-                                initial={getOriginal(skill.s_no, [0,0])}  
-                                animate={getAnimation(skill.s_no, [0,0])}
-                                transition={{repeat: Infinity, duration: 15, ease: "linear"}}
-                                style={{height:100, width:100, position: "absolute", alignContent:"center",display:"flex",justifyContent:"center"}}
-                            /> 
+                                initial={getOriginal(skill.s_no, [-50, 0])}
+                                animate={getAnimation(skill.s_no, [-50, 0])}
+                                transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+                                style={{ height: 100, width: 100, position: "absolute", alignContent: "center", display: "flex", justifyContent: "center" }}
+                            />
                             <motion.p
-                                initial={getOriginal(skill.s_no, [0,80])}  
-                                animate={getAnimation(skill.s_no, [0,80])}
-                                transition={{repeat: Infinity, duration: 15, ease: "linear"}}
-                                style={{fontSize:20, position:"absolute", alignContent:"center", whiteSpace: "nowrap", zIndex:1}}>
-                                    {skill.s_name}
-                                </motion.p>
+                                initial={getOriginal(skill.s_no, [-skill.s_name.length * 5, 80])}
+                                animate={getAnimation(skill.s_no, [-skill.s_name.length * 5, 80])}
+                                transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+                                style={{
+                                    fontSize: 20, position: "absolute", alignContent: "center",
+                                    whiteSpace: "nowrap", zIndex: 1, color: "gray"
+                                }}>
+                                {skill.s_name}
+                            </motion.p>
                         </div>
                     )
-                    
                 })}
             </div>
         </div>
